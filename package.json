@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --https --ssl-cert localhost.pem --ssl-key localhost-key.pem",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/image": "^0.7.1",
+    "@nuxt/image-edge": "^1.0.0-27907872.f4dd19d",
+    "nuxt": "3.0.0"
+  },
+  "dependencies": {
+    "@storyblok/nuxt": "^4.5.0",
+    "vue3-carousel": "^0.2.9"
+  }
+}
