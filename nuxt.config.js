@@ -10,7 +10,6 @@ export default defineNuxtConfig({
             },
             meta: [
             { charset: 'utf-8' },
-            {'http-equiv':"Content-Security-Policy", content:"default-src 'self';"},
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
             { hid: 'description', name: 'description', content: 'The site of the Opera Singer, Mar Moran, a great Soprano of liryc world.' },
             { name: 'format-detection', content: 'telephone=no' },
