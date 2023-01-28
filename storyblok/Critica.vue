@@ -26,6 +26,21 @@
     font-size: var(--font-size-xl);
     max-width: 1080px;
 }
+@media (max-width: 650px) {
+    .critica {
+        min-height: 300px;
+    }
+    .critica .container{
+        padding: 0;
+
+    }
+    .critica-quote_text{
+        font-size: var(--font-size-s);
+    }
+    .critica-quote_source {
+        font-size: var(--font-size-xs);
+    }
+}
 </style>
 <script setup>
     const props = defineProps({ blok: Object })

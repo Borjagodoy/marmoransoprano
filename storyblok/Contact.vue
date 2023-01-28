@@ -93,11 +93,22 @@
       .contact .container{
         flex-wrap: wrap;
       }
-        .contact-manager, .contact-social-media{
-          width: 100%;
-          margin-top: 2rem;
-        }
-    }
+      .contact-manager, .contact-social-media{
+        width: 100%;
+        margin-top: 2rem;
+      }
+      .contact-title{
+        font-size: var(--font-size-l);
+      }
+      .contact-manager-company {
+        font-size: 1rem;
+      }
+      .contact-manager-name, 
+      .contact-manager-phone, 
+      .contact-manager-email{
+        font-size: var(--font-size-s);
+      }
+      }
   </style>
  <script setup>
  const props = defineProps({ blok: Object })
