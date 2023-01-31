@@ -5,8 +5,8 @@
           <p>Soprano</p>
       </NuxtLink>        
       <menu>
-          <li v-for="item in menuItems">
-            <NuxtLink :to="item.label">
+          <li v-for="item in menuItems.es">
+            <NuxtLink :to="item.url">
               {{ item.label }}
             </NuxtLink>
           </li>
@@ -65,26 +65,40 @@
       padding: 0;
     }
     li{
-      padding: 0 10px;
+      padding: 0;
+      font-size: 12px;
     }
   }
 </style>
    
   <script setup>
-  import { ref } from 'vue'
 
-  let menuItems= ref([]);
-  const props = defineProps({ 
-    blok: Object,
-  })
-  const getMenuItems = () => {
-    const headerMenu = props.blok.headerMenu
-    menuItems = headerMenu.map( (item) => { 
-        return {
-            label: item.label, 
-            url: item.url.url}
-        })
-  }
-   getMenuItems()
+  const menuItems= {
+    es: [
+      {
+        label: "Biografía",
+        url: "/biography"
+      },
+      {
+        label: "Galeria",
+        url: "/gallery"
+      },
+      {
+        label: "Eventos",
+        url: "/events"
+      },
+      {
+        label: "Noticias",
+        url: "/news"
+      },
+      {
+        label: "Contacto",
+        url: "/contact"
+      }
+    ],
+    en: []
+
+  };
+  
 
   </script>

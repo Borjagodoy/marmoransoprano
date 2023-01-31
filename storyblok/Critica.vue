@@ -24,6 +24,7 @@
 }
 .critica-quote_text{
     font-size: var(--font-size-xl);
+    font-weight: lighter;;
     max-width: 1080px;
 }
 @media (max-width: 650px) {

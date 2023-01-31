@@ -11,13 +11,14 @@
             provider="storyblok"
             sizes="sm:100vw md:50vw lg:1432px xl: 1080px"
             format="webp"
-            width="592"
+            width="450"
+            height="546"
             :src="blok.image?.filename"
             alt=""/>
         </div>
     </section>
-  </template>
-  <style>
+</template>
+<style>
     .biography{
         color: #000;
         display: flex;
@@ -47,6 +48,11 @@
         padding: 2rem 0;
         font-size: var(--font-size-s)
     }
+    @media (max-width: 1049px) {
+        .biography-image {
+            width: 450px;
+        }
+    }
     @media (max-width: 920px) {
         .biography .container {
             flex-direction: column-reverse;
@@ -65,8 +71,8 @@
             width: 100%;
         }
     }
-  </style>
- <script setup>
+</style>
+<script setup>
  const props = defineProps({ blok: Object })
  const biographyContent = computed(() => renderRichText(props.blok.Biography));
 </script>
